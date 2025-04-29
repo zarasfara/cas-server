@@ -1,0 +1,23 @@
+services:
+  cas:
+    image: apereo/cas:latest
+    container_name: cas
+    ports:
+      - "8443:8443"
+      - "8080:8080"
+    environment:
+      CAS_AUTHN_ACCEPT_USERS: "user::password::ROLE_ADMIN"
+      CAS_SERVICE_REGISTRY_ADMIN_USERS: "user"
+      CAS_AUTHORIZATION_RULES_ADMIN: "/cas/services/**::ROLE_ADMIN"
+      CAS_AUTHORIZATION_RULES_USER: "/cas/**::ROLE_USER"
+
+
+    volumes:
+      - ./etc/cas/config:/etc/cas/config
+      - ./etc/cas/services:/etc/cas/services
+      - ./keystore:/etc/cas
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8080/cas/login" ]
+      retries: 3
+      timeout: 20s
+      interval: 30s

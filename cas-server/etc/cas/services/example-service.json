@@ -1,0 +1,8 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "http://example\\.test:5133/.*",
+  "name" : "Example Test Service",
+  "id" : 10000001,
+  "description": "Пример тестового сервиса",
+  "evaluationOrder" : 10000
+}

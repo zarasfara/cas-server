@@ -1,0 +1,11 @@
+{
+  "@class" : "org.apereo.cas.services.RegisteredServiceJsonService",
+  "serviceId" : "https://example.com",
+  "name" : "Your Service",
+  "description" : "Service description",
+  "accessStrategy" : {
+    "@class" : "org.apereo.cas.services.DefaultRegisteredServiceAccessStrategy",
+    "enabled" : true,
+    "unauthorizedRedirectUrl" : "https://example.com/error"
+  }
+}

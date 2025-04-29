@@ -1,0 +1,14 @@
+{
+  "@class": "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId": "https://example.com",
+  "name": "MyService",
+  "id": 10000001,
+  "description": "Local development service",
+  "evaluationOrder": 1,
+  "logoutType": "BACK_CHANNEL",
+  "logoutUrl": "https://example.com",
+  "attributeReleasePolicy": {
+    "@class": "org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy",
+    "allowedAttributes": ["email", "name"]
+  }
+}

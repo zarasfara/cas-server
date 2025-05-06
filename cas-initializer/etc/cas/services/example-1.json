@@ -1,6 +1,6 @@
 {
   "@class" : "org.apereo.cas.services.CasRegisteredService",
-  "serviceId" : "https://example.com",
+  "serviceId" : "^http://example.test:5133/Callback.*",
   "name" : "Your Service",
   "id" : 103935657744185,
   "evaluationOrder" : 10

@@ -297,9 +297,7 @@ dependencies {
      * plugin via the CAS bom.
      **/
     implementation "org.apereo.cas:cas-server-support-json-service-registry"
-    // implementation "org.springframework.boot:spring-boot-starter-data-mongodb"
-    // implementation "org.apereo.cas:cas-server-support-mongo-service-registry"
-    // implementation "org.apereo.cas:cas-server-support-mongo-core"
+
 
     
     testImplementation "org.springframework.boot:spring-boot-starter-test"

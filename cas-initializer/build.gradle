@@ -298,7 +298,6 @@ dependencies {
      **/
     implementation "org.apereo.cas:cas-server-support-json-service-registry"
 
-
     
     testImplementation "org.springframework.boot:spring-boot-starter-test"
 }

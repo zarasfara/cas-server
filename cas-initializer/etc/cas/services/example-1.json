@@ -1,0 +1,7 @@
+{
+  "@class" : "org.apereo.cas.services.CasRegisteredService",
+  "serviceId" : "https://example.com",
+  "name" : "Your Service",
+  "id" : 103935657744185,
+  "evaluationOrder" : 10
+}

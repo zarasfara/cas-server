@@ -1,0 +1,8 @@
+{
+    "@class": "org.apereo.cas.services.CasRegisteredService",
+    "serviceId": "^http://library\\.university\\.local:5002(/.*)?",
+    "name": "Library System",
+    "id": 100002,
+    "logoutUrl": "http://library.university.local:5002/LogoutCallback",
+    "evaluationOrder": 20
+}

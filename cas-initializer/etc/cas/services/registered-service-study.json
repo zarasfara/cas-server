@@ -1,0 +1,8 @@
+{
+  "@class": "org.apereo.cas.services.CasRegisteredService",
+  "serviceId": "^http://study\\.university\\.local:5087(/.*)?",
+  "name": "Study Portal",
+  "id": 100001,
+  "logoutUrl": "http://study.university.local:5001/LogoutCallback",
+  "evaluationOrder": 10
+}

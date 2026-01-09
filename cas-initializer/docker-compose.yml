@@ -2,6 +2,8 @@ version: '3'
 services:
   cas:
     build: .
+    volumes:
+     - ./etc/cas/services:/etc/cas/services
     ports:
      - "443:8443"
      - "8080:8080"
